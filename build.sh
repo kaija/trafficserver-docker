@@ -1,1 +1,1 @@
-sudo docker build -t kaija/trafficserver .
+sudo docker build -t kaija/trafficserver6 .
