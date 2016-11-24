@@ -12,7 +12,7 @@ ADD ./trafficserver_6.0.0-2_amd64.deb /var/cache/apt/archives/
 RUN dpkg -i /var/cache/apt/archives/trafficserver_6.0.0-2_amd64.deb
 RUN mkdir -p /var/run/trafficserver
 ADD ./etc/trafficserver /etc/trafficserver
-
+ADD run.sh /
 EXPOSE 8080
 
-CMD ["traffic_server"]
+CMD ["/run.sh"]
